@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.grad {
+  background-image: radial-gradient(circle 300px at 20%, #3b95ff2b, #1b1b1b);
+}
