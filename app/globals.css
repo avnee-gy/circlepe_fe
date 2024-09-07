@@ -29,3 +29,8 @@ body {
 .grad {
   background-image: radial-gradient(circle 300px at 20%, #3b95ff2b, #1b1b1b);
 }
+
+.shad {
+  box-shadow: 0px -4px 6px -1px rgb(0 0 0 / 0.1),
+    0px -2px 4px -2px rgb(0 0 0 / 0.1);
+}

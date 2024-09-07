@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { TiTick } from "react-icons/ti";
 
 const StepTwo: React.FC = () => {
-  const [selectedPeriod, setSelectedPeriod] = useState(6); // Default selection is 6 months
-  const [isModalVisible, setModalVisible] = useState(true); // Modal is visible by default
+  const [selectedPeriod, setSelectedPeriod] = useState(6);
+  const [isModalVisible, setModalVisible] = useState(true);
 
   return (
     <div className="p-6 relative">
@@ -19,9 +19,8 @@ const StepTwo: React.FC = () => {
       {/* Apartment Information */}
       <div className="bg-gray-100 rounded-lg p-4 mb-4 flex">
         <div className="w-24 h-24 rounded-lg overflow-hidden mr-4">
-          {/* Placeholder for Apartment Image */}
           <img
-            src="apartment_image_url"
+            src={require("../assets/apart.png")}
             alt="Apartment"
             className="w-full h-full object-cover"
           />
@@ -111,20 +110,7 @@ const StepTwo: React.FC = () => {
             <div className="flex justify-center mb-4">
               <div className="bg-blue-100 rounded-full p-4">
                 {/* Approved Icon */}
-                <svg
-                  className="w-8 h-8 text-primary-blue"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2l4 -4m-6 4l-4 -4m12 0l4 4m-10 -4h-4v-2a2 2 0 0 1 2 -2h4v2m-4 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4m-4 0l-2 -2m4 0h4v-2a2 2 0 0 0 -2 -2h-4v2"
-                  />
-                </svg>
+                <TiTick size={28} color="#5AA5FD" />
               </div>
             </div>
             <div className="text-center text-lg font-semibold mb-4">
