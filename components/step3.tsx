@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaCheckCircle, FaChevronRight } from "react-icons/fa";
 
@@ -77,10 +78,14 @@ const StepThree = () => {
             .
           </span>
         </label>
-
-        <button className="mt-4 w-full bg-primary-blue text-white font-semibold py-3 rounded-lg text-lg">
-          Get Started
-        </button>
+        <Link
+          href="/stepFour"
+          className="mt-4 w-full bg-primary-blue items-center flex justify-center rounded-lg"
+        >
+          <button className=" text-white font-semibold py-3  text-lg">
+            Get Started
+          </button>
+        </Link>
         <button className="mt-2 text-blue-600 font-semibold">Go Back</button>
       </div>
     </div>

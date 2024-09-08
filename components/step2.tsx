@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { TiTick } from "react-icons/ti";
 
@@ -20,7 +22,7 @@ const StepTwo: React.FC = () => {
       <div className="bg-gray-100 rounded-lg p-4 mb-4 flex">
         <div className="w-24 h-24 rounded-lg overflow-hidden mr-4">
           <img
-            src={require("../assets/apart.png")}
+            src="assets/apart.png"
             alt="Apartment"
             className="w-full h-full object-cover"
           />
@@ -171,9 +173,11 @@ const StepTwo: React.FC = () => {
               </li>
             </ul>
             <div className="flex justify-center">
-              <button className="bg-primary-blue text-white font-semibold py-2 px-6 rounded-full">
-                Pay with Circle
-              </button>
+              <Link href="/stepThree">
+                <button className="bg-primary-blue text-white font-semibold py-2 px-6 rounded-full">
+                  Pay with Circle
+                </button>
+              </Link>
             </div>
           </div>
         </div>

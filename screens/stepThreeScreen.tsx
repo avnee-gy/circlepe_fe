@@ -26,7 +26,6 @@ const StepThreeScreen: React.FC = () => {
             <div className="w-1/3 h-6 bg-black absolute top-0 rounded-b-xl"></div>
           </div>
           <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-            {/* <StepThreeScreen /> */}
             <StepThree />
           </div>
         </div>
