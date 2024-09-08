@@ -1,3 +1,24 @@
+# Circle Pay Frontend Assignment
+
+## Overview
+This project is a website created as part of a frontend assignment. The website simulates a mobile phone experience, where users can interact with mock phone screens to navigate through different pages. The goal is to create a seamless and interactive user experience by guiding the user through a series of steps, each represented on a different page of the website.
+
+Website Link: https://circlepe-fe.vercel.app/
+
+## Pages and User Journey
+# Home Page
+Objective: Select the first card.
+Instructions: On the Home Page, you will see a list of cards. Click on the first card to proceed to the next step.
+# Step 1 Page
+Objective: Select the first card and choose a 6-month period.
+Instructions: On the Step 1 Page, select the first card from the list. Then, click on the "6 months" button to proceed to the next step.
+# Step 2 Page
+Objective: Click the "Pay with Circle" button.
+Instructions: On the Step 2 Page, you will see a "Pay with Circle" button. Click this button to proceed to the next step.
+# Step 3 Page
+Objective: Click the "Get Started" button.
+Instructions: On the Step 3 Page, click on the "Get Started" button to move to the final page and complete the journey.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
