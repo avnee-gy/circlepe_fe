@@ -16,21 +16,21 @@ const HomeScreen = ({ onGetStarted }) => {
       rating: 4.8,
       location: "Sector 54",
       price: "₹25,000/month",
-      image: "../assets/apart.png",
+      image: "/assets/apart.png",
     },
     {
       name: "Cozy Studio",
       rating: 4.5,
       location: "DLF Phase 1",
       price: "₹18,000/month",
-      image: "/placeholder.svg",
+      image: "/assets/apart.png",
     },
     {
       name: "Spacious Villa",
       rating: 4.9,
       location: "Golf Course Road",
       price: "₹80,000/month",
-      image: "/placeholder.svg",
+      image: "/assets/apart.png",
     },
   ];
 

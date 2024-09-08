@@ -1,4 +1,12 @@
+import Link from "next/link";
 import React from "react";
+import {
+  FaChevronLeft,
+  FaRegStar,
+  FaHome,
+  FaRegUserCircle,
+} from "react-icons/fa";
+import { IoIosSearch, IoMdSettings } from "react-icons/io";
 
 const StepZero: React.FC = () => {
   const propertyCards = [
@@ -7,21 +15,21 @@ const StepZero: React.FC = () => {
       rating: 4.8,
       location: "Sector 54",
       price: "₹25,000/month",
-      image: "/placeholder.svg",
+      image: "/assets/apart.png",
     },
     {
       name: "Cozy Studio",
       rating: 4.5,
       location: "DLF Phase 1",
       price: "₹18,000/month",
-      image: "/placeholder.svg",
+      image: "/assets/apart.png",
     },
     {
       name: "Spacious Villa",
       rating: 4.9,
       location: "Golf Course Road",
       price: "₹80,000/month",
-      image: "/placeholder.svg",
+      image: "/assets/apart.png",
     },
   ];
 
@@ -29,9 +37,9 @@ const StepZero: React.FC = () => {
     <div className="flex flex-col h-full">
       {/* Top bar */}
       <div className="flex justify-between items-center p-4 border-b">
-        <ChevronLeft className="w-6 h-6" />
+        <FaChevronLeft className="w-6 h-6" />
         <span className="font-semibold">Search Results</span>
-        <User className="w-6 h-6" />
+        <FaRegUserCircle className="w-6 h-6" />
       </div>
 
       {/* Search bar */}
@@ -42,44 +50,42 @@ const StepZero: React.FC = () => {
             placeholder="Gurgaon"
             className="w-full p-2 pr-10 border rounded-md"
           />
-          <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <IoIosSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
         </div>
       </div>
 
       {/* Property cards */}
       <div className="flex-1 overflow-y-auto">
         {propertyCards.map((property, index) => (
-          <div
-            key={index}
-            className="flex p-4 border-b cursor-pointer"
-            onClick={onGetStarted}
-          >
-            <img
-              src={property.image}
-              alt={property.name}
-              className="w-24 h-24 object-cover rounded-md mr-4"
-            />
-            <div className="flex flex-col justify-between">
-              <div>
-                <h3 className="font-bold">{property.name}</h3>
-                <div className="flex items-center text-sm text-gray-600">
-                  <Star className="w-4 h-4 fill-yellow-400 mr-1" />
-                  <span>{property.rating}</span>
+          <Link href="/stepOne">
+            <div key={index} className="flex p-4 border-b cursor-pointer">
+              <img
+                src={property.image}
+                alt={property.name}
+                className="w-24 h-24 object-cover rounded-md mr-4"
+              />
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h3 className="font-bold">{property.name}</h3>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <FaRegStar className="w-4 h-4 fill-yellow-400 mr-1" />
+                    <span>{property.rating}</span>
+                  </div>
+                  <p className="text-sm text-gray-600">{property.location}</p>
                 </div>
-                <p className="text-sm text-gray-600">{property.location}</p>
+                <p className="font-semibold">{property.price}</p>
               </div>
-              <p className="font-semibold">{property.price}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
       {/* Bottom navigation */}
       <div className="flex justify-around items-center p-4 border-t">
-        <Home className="w-6 h-6" />
-        <Search className="w-6 h-6" />
-        <UserCircle className="w-6 h-6" />
-        <Settings className="w-6 h-6" />
+        <FaHome className="w-6 h-6" />
+        <IoIosSearch className="w-6 h-6" />
+        <FaRegUserCircle className="w-6 h-6" />
+        <IoMdSettings className="w-6 h-6" />
       </div>
     </div>
   );
