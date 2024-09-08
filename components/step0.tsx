@@ -57,8 +57,8 @@ const StepZero: React.FC = () => {
       {/* Property cards */}
       <div className="flex-1 overflow-y-auto">
         {propertyCards.map((property, index) => (
-          <Link href="/stepOne">
-            <div key={index} className="flex p-4 border-b cursor-pointer">
+          <Link href="/stepOne" key={index}>
+            <div className="flex p-4 border-b cursor-pointer">
               <img
                 src={property.image}
                 alt={property.name}

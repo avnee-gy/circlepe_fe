@@ -1,6 +1,5 @@
 "use client";
 import StepZero from "@/components/step0";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
