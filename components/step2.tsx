@@ -4,7 +4,7 @@ import { TiTick } from "react-icons/ti";
 
 const StepTwo: React.FC = () => {
   const [selectedPeriod, setSelectedPeriod] = useState(6);
-  const [isModalVisible, setModalVisible] = useState(true);
+  const isModalVisible = true;
 
   return (
     <div className="p-6 relative">
