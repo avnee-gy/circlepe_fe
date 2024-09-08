@@ -7,9 +7,11 @@ import {
 } from "react-icons/fa";
 import { IoIosSearch, IoMdSettings } from "react-icons/io";
 
-import "tailwindcss/tailwind.css";
+type HomeScreenProps = {
+  onGetStarted: () => void;
+};
 
-const HomeScreen = ({ onGetStarted }) => {
+const HomeScreen: React.FC<HomeScreenProps> = ({ onGetStarted }) => {
   const propertyCards = [
     {
       name: "Luxury Apartment",
